@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
 })
 export class QueryComponent{
     name:string
-    constructor(){
-        this.name="First Angular 2 App"
+    phone:number
+    addPerson()
+    {
+        var person={
+            name:this.name,
+            phone:this.phone
+        };
+        console.log(person);
     }
 }
