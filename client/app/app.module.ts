@@ -7,6 +7,6 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
     imports:[BrowserModule,HttpModule,FormsModule],
     declarations: [ AppComponent,QueryComponent],
-    bootstrap:[AppComponent]
+    bootstrap:[AppComponent],
 })
 export class AppModule{}
