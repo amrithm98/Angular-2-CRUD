@@ -20,7 +20,9 @@ var QueryComponent = (function () {
             name: this.name,
             phone: this.phone
         };
-        this.queryService.addPerson(person);
+        this.queryService.addPerson(person).subscribe(function (data) {
+            console.log(data);
+        });
     };
     return QueryComponent;
 }());

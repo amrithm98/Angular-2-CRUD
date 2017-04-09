@@ -21,6 +21,8 @@ export class QueryComponent{
             name:this.name,
             phone:this.phone
         };
-        this.queryService.addPerson(person);
+        this.queryService.addPerson(person).subscribe(data=>{
+            console.log(data);
+        });
     }
 }

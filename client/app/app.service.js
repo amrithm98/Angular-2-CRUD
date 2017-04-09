@@ -19,7 +19,7 @@ var QueryService = (function () {
     QueryService.prototype.addPerson = function (person) {
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json');
-        return this.http.post("/api/person", person, { headers: headers }).map(function (response) { return response.json(); });
+        return this.http.post("/api/person", JSON.stringify(person), { headers: headers }).map(function (response) { return response.json(); });
     };
     return QueryService;
 }());
